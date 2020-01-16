@@ -10,6 +10,7 @@ if ($player== "") $player="Elliot";
 echo file_get_contents( "1.html" );
 
 
+
 /**
  * Returns an authorized API client.
  * @return Google_Client the authorized client object
