@@ -67,13 +67,14 @@ $service = new Google_Service_Sheets($client);
 // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
 $spreadsheetId = '1BpfuDt4Mi0cNGZXO5PrYXK0dxeXXzS2Po2priL6dL10';
 
-$numdrills= "Elliot!B1";
+$range= "Elliot!B1";
 
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $ndrills = $response->getValues();
 
+
 $rangeFrom= "A3";
-$rangeTo= "E".$ndrills;
+$rangeTo= "E".$ndrills['0'][0];
 
 $range = "Elliot!$rangeFrom:$rangeTo";
 
