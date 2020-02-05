@@ -2,29 +2,141 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
     <title>Golf Stats</title>
 
 <style>
+@font-face {
+  font-family: "neris-black";
+  src:url("https://darkoly.com/dev/brawl/index_files/neris-black.woff2") format("woff2");
+}
 h1 {
   font-size:19px;
-  font-family: helvetica;
+  font-family: "neris-black";
+  color: "white";
   padding-left: 20px;
-  background: lightsteelblue;
-  color: dodgerblue;
+  left: -30px;
+  background: #00A3FF;
+  width: 470px;
+  height: 150px;
+  transform: skew(-7.5deg);
+  align-content: center;
+}
+
+body{
+  color: white;
+  font-size:12px;
+  font-family: "neris-black";
+  -webkit-font-smoothing: antialiased;
+  background: #1A3866;
+}
+
+.graph {
+    font-size:19px;
+    font-family: "neris-black";
+    font: "white";
+    left: 30px;
+    background: #00A3FF;
+    width: 70%;
+    align-content: center;
+}
+
+.description{
+  width: 45%;
+  margin-bottom: 1px;
+  height: 40px;
+  padding: 5px;
+  margin:5px;
+  background: #0E5FB0;
+  justify-content:space-around;
+  box-sizing: border-box;
+  box-shadow: 0 2px 0 2px #000;
+  border: 1px solid #0B1930;
+  -webkit-font-smoothing: antialiased;
+}
+
+div {
+  display: inline-flex;
+}
+.result{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 10%;
+  /* background-color: red; */
+}
+
+
+.desc{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 70%;
+  /* background-color: red; */
+}
+.logo{
+   padding: 0px;
+   display: inline-block;
+   /* background-color: red; */
+
 
 }
-body{
-  color: rebeccapurple;
-  font-family: helvetica;
-  background-image: url("https://i.ytimg.com/vi/WE1Ny2rauJM/maxresdefault.jpg");  background-attachment: fixed;
-}
 </style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
   </head>
   <body>
 
-    <h1>hello </h1>
+<a href="https://forms.gle/8AQPGjLgNCWGJRW48" style="color: #FFFFFF"> Enter New Stat </a>
+    <h1>hello Yeti!</h1>
 
+
+
+
+  <div class="description">
+    <div class="logo" >
+      <img src="./index_files/4.png" width="40px" >
+    </div>
+  <div class="desc">
+    Putt de Retour Explosés
+  </div>
+    <div class="result">
+      20%
+    </div>
+  </div>
+
+
+  <div class="description">
+    <div class="logo" >
+      <img src="./index_files/3.png" width="40px" >
+    </div>
+  <div class="desc">
+    Putt de Retour Explosés
+  </div>
+    <div class="result">
+      20%
+    </div>
+  </div>
+
+
+
+
+<div class="graph ct-chart ct-perfect-fourth">
+<script>
+var data = {
+  // A labels array that can contain any sort of values
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [5, 2, 4, 2, 0]
+  ]
+};
+
+new Chartist.Line('.ct-chart', data);
+</script>
+
+</div>
 
   </body>
 </html>
