@@ -12,19 +12,39 @@
   font-family: "neris-black";
   src:url("https://darkoly.com/dev/brawl/index_files/neris-black.woff2") format("woff2");
 }
-h1 {
+.skew {
   font-size:19px;
   font-family: "neris-black";
-  color: "white";
-  padding-left: 20px;
-  left: -30px;
+  color: "black";
+  padding-left: 40px;
+  left: 10px;
   background: #00A3FF;
-  width: 470px;
-  height: 150px;
-  transform: skew(-7.5deg);
-  align-content: center;
+  width: 270px;
+  height: 100px;
+  left: -10px;
+  transform: skew(-9.5deg);
+  margin-bottom: 20px;
+position:absolute;
 }
 
+.isDesktop  {
+    border:2px solid #081933;
+    padding-left: 20px;
+  background: #0E5FB0;
+      width: 470px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.Mainlogo {
+    width: 80%;
+    border:2px solid #081933;
+    padding-lef: 20px;
+    padding-left: 50%;
+    background: #00A3FF;
+    height: 80px;
+    margin-bottom: 50px;
+}
 body{
   color: white;
   font-size:12px;
@@ -78,9 +98,8 @@ div {
    padding: 0px;
    display: inline-block;
    /* background-color: red; */
-
-
 }
+
 </style>
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
@@ -89,9 +108,23 @@ div {
   <body>
 
 <a href="https://forms.gle/8AQPGjLgNCWGJRW48" style="color: #FFFFFF"> Enter New Stat </a>
-    <h1>hello Yeti!</h1>
 
 
+<div class="Mainlogo" >
+<img src="images/golfstars.png" width="120" height="80"   alt="GolfStars Logo">
+</div>
+
+
+
+  <div class="isDesktop">
+    <div  style="background-image: url('https://brawlstats.com/dist/16000018.527b4daffd13461c39ba63cb2797d1e9.png';)"></div>
+<div class="skew">
+
+      Hello Yeti!
+
+    </div>
+
+ </div>
 
 
   <div class="description">
